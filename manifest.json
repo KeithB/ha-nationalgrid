@@ -1,0 +1,11 @@
+{
+  "domain": "national_grid",
+  "name": "National Grid",
+  "integration_type": "device",
+  "documentation": "https://github.com/KeithB/ha-nationalgrid",
+  "dependencies": [],
+  "codeowners": ["@KeithB"],
+  "requirements": [],
+  "iot_class": "cloud_polling",
+  "version": "0.1.0"
+}
