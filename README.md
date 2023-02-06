@@ -2,7 +2,7 @@
 
 ## Sensors
 This integration provides a sensor for the UK National Grid Demand Flexibility Service (DFS) indicating the current state of the DFS offered by NG ESO. Named based on the entry added to configuration.yaml, it can have the following states:
-  - **Inactive**: No DFS requirement until midnight.
+  - **Inactive**: No DFS requirement until midnight. session_start and session_end will be null.
   - **Scheduled**: There is a DFS requirement between now and midnight. Timings can be seen in the session_start and session_end attributes.
   - **Active**: There is an active DFS requirement now. Timings can be seen in the session_start and session_end attributes.
 
