@@ -2,9 +2,11 @@
 
 ## Sensors
 This integration provides a sensor for the UK National Grid Demand Flexibility Service (DFS) indicating the current state of the DFS offered by NG ESO. Named based on the entry added to configuration.yaml, it can have the following states:
-  - **Inactive**: No DFS requirement until midnight. session_start and session_end will be null.
-  - **Scheduled**: There is a DFS requirement between now and midnight. Timings can be seen in the session_start and session_end attributes.
-  - **Active**: There is an active DFS requirement now. Timings can be seen in the session_start and session_end attributes.
+State | Description | Attributes
+----- | ----------- | ----------
+Inactive | No DFS requirement until midnight. | `session_start`: null, `session_end`: null
+Scheduled | There is a DFS requirement between now and midnight. | `session_start`: Start of the scheduled session, `session_end`: End of the scheduled session.
+Active | There is an active DFS requirement now. | `session_start`: Start of the active session, `session_end`: End of the active session.
 
 ## Disclaimers
 - This is the first HA integration I've done and first time I've ever really done anything with Python. Use at your own risk!
